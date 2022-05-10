@@ -26,10 +26,6 @@ function getQuestion(questions) {
 
 
 
-
-
-
-
 var questions = [
      {
          question: 'What is a string?',
@@ -48,20 +44,20 @@ var questions = [
             { text: 'an organized collection of instructions', correct: false },
         ]
     }, {
-        question: 'How old am I',
+        question: 'What does API stand for?',
         answers: [
-            { text: '21', correct: true },
-            { text: '12', correct: false },
-            { text: '20', correct: false },
-            { text: '19', correct: false },
+            { text: 'American Programming Industry', correct: false },
+            { text: 'Application Programming Interface', correct: true },
+            { text: 'Applied Practice Initiative', correct: false },
+            { text: 'American Pioneering Inc.', correct: false },
         ]
     }, {
-        question: 'How old am I',
+        question: 'What is a boolean?',
         answers: [
-            { text: '21', correct: true },
-            { text: '12', correct: false },
-            { text: '20', correct: false },
-            { text: '19', correct: false },
+            { text: 'an unexpecter error or defect', correct: false },
+            { text: 'a sequence of characters', correct: false },
+            { text: 'a type of pasta', correct: false },
+            { text: 'an expressions used for creating true or false statements', correct: true },
         ]
     } 
  ]
