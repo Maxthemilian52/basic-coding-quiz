@@ -17,45 +17,34 @@ updateCountDown();
 getQuestion();
 };
 
-function getQuestion(questions) {
-    questionEl.innerHTML = questions.question
-}
+function getQuestion() {
+    questionEl.innerText = question[0];
+};
  
 var questions = [
-     {
-         question: 'What is a string?',
-         answers: [
-             { text: 'a data value that is made up of ordered sequences of characters', correct: true },
-             { text: 'a piece of thread', correct: false },
-             { text: 'String on a musical instrument', correct: false },
-             { text: 'a set of instructions that are followed to solve a problem', cottect: false },
-         ]
-    }, {
-        question: 'What is an Algorithm?',
-        answers: [
-            { text: 'a sequence of characters', correct: false },
-            { text: 'a chunk of repeating code', correct: false },
-            { text: 'a set of instructions that are followed to solve a problem', correct: true },
-            { text: 'an organized collection of instructions', correct: false },
-        ]
-    }, {
-        question: 'What does API stand for?',
-        answers: [
-            { text: 'American Programming Industry', correct: false },
-            { text: 'Application Programming Interface', correct: true },
-            { text: 'Applied Practice Initiative', correct: false },
-            { text: 'American Pioneering Inc.', correct: false },
-        ]
-    }, {
-        question: 'What is a boolean?',
-        answers: [
-            { text: 'an unexpecter error or defect', correct: false },
-            { text: 'a sequence of characters', correct: false },
-            { text: 'a type of pasta', correct: false },
-            { text: 'an expressions used for creating true or false statements', correct: true },
-        ]
-    } 
- ]
+    {
+        question: 'What is a string?',
+        choices: ["a data value that is made up of ordered sequences of characters",
+        "a piece of thread", "String on a musical instrument", "a set of instructions that are followed to solve a problem"],
+        answer: 0
+    },
+    {
+        question: "What is an Algorithm?",
+        choices: ["a sequence of characters", "a chunk of repeating code", "a set of instructions that are followed to solve a problem",
+        "an organized collection of instructions"],
+        answer: 3
+    },
+    {
+        question: "What does API stand for?",
+        choices: ["American Programming Industry", "Application Programming Interface", "Applied Practice Initiative", "American Pioneering Inc."],
+        answer: 1
+    },
+    {
+        question: "What is a boolean?",
+        choices: ["an unexpecter error or defect", "a sequence of characters", "a type of pasta", "an expressions used for creating true or false statements"],
+        answer: 3
+    },
+]
 
  
 const startingMinutes = 1.5;
