@@ -18,14 +18,9 @@ getQuestion();
 };
 
 function getQuestion(questions) {
-    questionEl.innerText = questions.question
+    questionEl.innerHTML = questions.question
 }
  
-
-
-
-
-
 var questions = [
      {
          question: 'What is a string?',
